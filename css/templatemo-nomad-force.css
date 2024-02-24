@@ -352,7 +352,7 @@ strong {
 
 @media screen and (min-width: 992px) {
   .hero {
-    height: 100vh;
+    height: fit-content;
   }
 
   .custom-video,
