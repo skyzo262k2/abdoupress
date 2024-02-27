@@ -67,9 +67,6 @@
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#news">News & Events</a>
-                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact Us</a>
@@ -92,24 +89,19 @@
 
                     <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
                         <style>
-
-
+                            @media (max-width: 992px) {
+                                .pp {
+                                    margin-top: 20px;
+                                }
+                            }
                         </style>
-                        <p class="pp" style="color: rgb(23, 23, 23);font-weight: 400;" data-aos="fade-up"
-                            data-aos-delay="500">
-                            Bienvenue chez Adboupress - Votre destination numéro un pour des journaux de qualité à des
-                            prix imbattables ! Nous sommes fiers de vous proposer une large sélection de journaux
-                            provenant de sources renommées à travers le monde. Notre entreprise collabore déjà avec de
-                            nombreuses sociétés, assurant ainsi une offre diversifiée pour satisfaire tous les goûts.
+                        <p class="pp" style="color: rgb(23, 23, 23);font-weight: 400; font-size: 30px;"
+                            data-aos="fade-up" data-aos-delay="500">
 
-                            Chez Adboupress, nous comprenons l'importance de rester informé, c'est pourquoi nous mettons
-                            tout en œuvre pour rendre l'achat de journaux aussi accessible que possible. Nous offrons
-                            des prix compétitifs, garantissant que vous obtenez le meilleur rapport qualité-prix.
-
-                            De plus, nous sommes fiers de collaborer avec des entreprises partenaires, renforçant ainsi
-                            notre engagement envers la qualité et la fiabilité. Notre réseau mondial nous permet de vous
-                            offrir une expérience d'achat unique, avec la livraison gratuite vers n'importe quel endroit
-                            dans le monde.</p>
+                            Livraison quotidienne de votre journal préféré directement à votre domicile ou bureau,
+                            assurée avant 8 heures du matin. Simplifiez votre quotidien en profitant de ce service
+                            efficace et ponctuel. Faites de chaque matin une expérience agréable en recevant l'actualité
+                            chez vous dès le lever du soleil.</p>
                     </div>
 
                 </div>
@@ -122,6 +114,12 @@
 
                 <div class="scroller" data-speed="fast">
                     <ul class="tag-list scroller__inner">
+                        <li>Scriptum</li>
+                        <li>Traking data</li>
+                        <li>Direct investe</li>
+                        <li>Consultor</li>
+                        <li>Carma dédia</li>
+                        <li>Bakofice</li>
                         <li>Cih siege</li>
                         <li>Saham assurance</li>
                         <li>Ipsos</li>
@@ -225,26 +223,24 @@
                 <div class="pricing py-5">
                     <div class="plan">
                         <h2>abonnement mensuel</h2>
-                        <div class="price">199 dh/mois</div>
+                        <div class="price">--- dh/mois</div>
                         <ul class="features">
-                            <li><i class="fas fa-check-circle"></i> Livraison express</li>
-                            <li><i class="fas fa-check-circle"></i> Retours gratuits</li>
-                            <li><i class="fas fa-check-circle"></i> Suivi en temps réel</li>
+                            <li><i class="fas fa-check-circle"></i> Contactez nous</li>
+                            <li><i class="fas fa-check-circle"></i> pour plus</li>
+                            <li><i class="fas fa-check-circle"></i> d'informationss</li>
                             <li><i class="fas fa-check-circle"></i> Expédition internationale</li>
-                            <li><i class="fas fa-check-circle"></i> Service clientèle 24/7</li>
                         </ul>
                         <button>Contactez nous</button>
                     </div>
                     <div class="plan popular">
                         <span>Most Popular</span>
                         <h2>d'abonnement annuel</h2>
-                        <div class="price">1199 dh/an</div>
+                        <div class="price">--- dh/an</div>
                         <ul class="features">
-                            <li><i class="fas fa-check-circle"></i> Livraison express</li>
-                            <li><i class="fas fa-check-circle"></i>Retours gratuits/li>
-                            <li><i class="fas fa-check-circle"></i> Suivi en temps réel</li>
+                            <li><i class="fas fa-check-circle"></i> Contactez nous</li>
+                            <li><i class="fas fa-check-circle"></i> pour plus</li>
+                            <li><i class="fas fa-check-circle"></i> d'informationss</li>
                             <li><i class="fas fa-check-circle"></i> Expédition internationale</li>
-                            <li><i class="fas fa-check-circle"></i> Service clientèle 24/7</li>
                         </ul>
                         <button>Contactez nous</button>
                     </div>
@@ -258,7 +254,8 @@
                             <li><i class="fas fa-check-circle"></i> d'informationss</li>
                             <li><i class="fas fa-check-circle"></i> Expédition internationale</li>
                         </ul>
-                        <button>Contactez nous</button>
+                        <button><a href="#contact">Contactez nous</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -273,14 +270,14 @@
 
                         <h2 class="mb-4 text-center" data-aos="fade-up">Contactez-Nous Pour Plus D'informations</h2>
 
-                        <form action="#" method="post" class="contact-form" role="form" data-aos="fade-up">
+                        <form method="POST" data-netlify="true" onsubmit="submit" name="contact" class="contact-form">
 
                             <div class="row">
 
                                 <div class="col-lg-6 col-6">
                                     <label for="name" class="form-label">Nom <sup class="text-danger">*</sup></label>
 
-                                    <input type="text" name="name" id="name" class="form-control"
+                                    <input type="text" name="name" id="name" class="form-control" name="nom"
                                         placeholder="Full name" required>
                                 </div>
 
@@ -288,18 +285,16 @@
                                     <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
 
                                     <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        class="form-control" placeholder="Email address" required>
+                                        class="form-control" placeholder="Email address" required name="email">
                                 </div>
 
                                 <div class="col-12 my-4">
                                     <label for="message" class="form-label">Comment pouvons nous aider?</label>
 
                                     <textarea name="message" rows="6" class="form-control" id="message"
-                                        placeholder="Message" required></textarea>
+                                        placeholder="Message" required name="message"></textarea>
 
                                 </div>
-
-
 
                                 <div class="col-lg-5 col-12 mx-auto mt-5">
                                     <button type="submit" class="form-control">Contactez nous</button>
@@ -362,6 +357,7 @@
             </div>
             </section>
     </footer>
+
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
